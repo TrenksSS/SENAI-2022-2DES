@@ -1,0 +1,46 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+#btn{
+    border: none;
+    width: 100px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: green;
+    font-size: 18px;
+}#btn:hover{
+    color: black;
+    background-color: greenyellow;
+    transition: 1s;
+    width: 105px;
+    height: 31px;
+}
+#busca{
+    height: 20px;
+}
+#con1{
+    text-align: center;
+}
+p{
+    font-size: 22px;
+}
+#con2{
+    text-align: center;
+}
+#cbtn{
+    border: none;
+    width: 100px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: green;
+    font-size: 18px;
+}#cbtn:hover{
+    color: black;
+    background-color: greenyellow;
+    transition: 1s;
+    width: 105px;
+    height: 31px;
+}
+#cbusca{
+    height: 20px;
+}
