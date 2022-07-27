@@ -44,3 +44,49 @@ p{
 #cbusca{
     height: 20px;
 }
+#gbtn{
+    border: none;
+    width: 100px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: green;
+    font-size: 18px;
+}#gbtn:hover{
+    color: black;
+    background-color: greenyellow;
+    transition: 1s;
+    width: 105px;
+    height: 31px;
+}
+#ger{
+    height: 20px;
+    width: 60px;
+}
+#con3{
+    text-align: center;
+}
+#ddd{
+    height: 20px;
+    width: 30px;
+}
+#con4{
+    text-align: center;
+}
+#ebtn{
+    border: none;
+    width: 100px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: green;
+    font-size: 18px;
+}#ebtn:hover{
+    color: black;
+    background-color: greenyellow;
+    transition: 1s;
+    width: 105px;
+    height: 31px;
+}
+#ger2{
+    height: 20px;
+    width: 60px;
+}
