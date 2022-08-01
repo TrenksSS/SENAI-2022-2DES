@@ -142,7 +142,7 @@ function cpf(qtd) {
   if (d2 >= 10) d2 = 0;
   cs.appendChild(img1)
   img1.style.width = "25px"
-  cs.innerHTML += `${n1}${n2}${n3}${n4}${n5}${n6}${n7}${n8}${n9}${d1}${d2}</br>`
+  cs.innerHTML += `${n1}${n2}${n3}.${n4}${n5}${n6}.${n7}${n8}${n9}-${d1}${d2}</br>`
     }
 
 }
