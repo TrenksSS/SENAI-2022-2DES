@@ -144,6 +144,6 @@ function cpf(qtd) {
   img1.style.width = "25px"
   cs.innerHTML += `${n1}${n2}${n3}.${n4}${n5}${n6}.${n7}${n8}${n9}-${d1}${d2}</br>`
     }
-
+ //
 }
 
