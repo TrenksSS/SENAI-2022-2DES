@@ -107,7 +107,7 @@ function gerarTelefone(qtd) {
         var telefone1 = Math.floor(Math.random() * (9999 - 1000 + 1)) + 1000
         tel.appendChild(img)
         img.style.width = "25px"
-         tel.innerHTML += `(${ddd.value}) ${d} ${telefone}-${telefone1}</br>`
+         tel.innerHTML += `  (${ddd.value}) ${d} ${telefone}-${telefone1}</br>`
 
     }
 
