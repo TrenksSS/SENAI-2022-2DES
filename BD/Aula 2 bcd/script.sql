@@ -38,4 +38,10 @@ insert into clientes values
 (null,"jorgete","Solsa","Rua Bueno - Jaguariuna - SP"),
 (null,"joão","Silva","Rua Elias Bueno - Jaguariuna - SP");
 
+inset into telefones values
+(1,"11 9 5809-6340"),
+(2,"11 9 5809-6340"),
+(3,"11 9 5809-6340"),
+(4,"11 9 5809-6340");
+
 select * from clientes;
