@@ -2,6 +2,8 @@
     padding: 0px;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
+    background-color: black;
+    color: aliceblue;
 }
 
 table{
@@ -15,4 +17,12 @@ th{
     border-left-width: 0;
     min-width: 120px;
     height: 18px;
+}
+#btn{
+    margin: 10px;
+    width: 100px;
+    height: 30px;
+    border-radius: 20%;
+    background-color: rgb(118, 6, 255);
+    color: aliceblue;
 }
