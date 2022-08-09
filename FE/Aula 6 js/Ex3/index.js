@@ -1,6 +1,6 @@
-[
+var funcionario = [
 	{   
-        "img":"./assets/do-utilizador.png",
+        "img":"assets/do-utilizador.png",
 		"funcionario":"Sancho Cedraz",
 		"cargo":{
 			"nome":"Analista",
@@ -9,7 +9,7 @@
 		"autorizado":true
 	},		
 	{
-        "img":"./assets/do-utilizador.png",
+        "img":"assets/do-utilizador.png",
 		"funcionario":"Ionara Pederneiras",
 		"cargo":{
 			"nome":"Técnico",
@@ -18,7 +18,7 @@
 		"autorizado":true
 	},
 	{
-        "img":"./assets/do-utilizador.png",
+        "img":"assets/do-utilizador.png",
 		"funcionario":"Filipe Castanho",
 		"cargo":{
 			"nome":"Desenvolvedor",
@@ -27,7 +27,7 @@
 		"autorizado":false
 	},
 	{
-        "img":"./assets/do-utilizador.png",
+        "img":"assets/do-utilizador.png",
 		"funcionario":"Lívia Bicalho",
 		"cargo":{
 			"nome":"Analista",
@@ -36,7 +36,7 @@
 		"autorizado":true
 	},
 	{
-        "img":"./assets/do-utilizador.png",
+        "img":"assets/do-utilizador.png",
 		"funcionario":"Mauro Varanda",
 		"cargo":{
 			"nome":"Desenvolvedor",
@@ -45,7 +45,7 @@
 		"autorizado":true
 	},	
 	{
-        "img":"./assets/do-utilizador.png",
+        "img":"assets/do-utilizador.png",
 		"funcionario":"Sandro Rosário",
 		"cargo":{
 			"nome":"Técnico",
@@ -57,21 +57,29 @@
 
 var infoFuncionario = document.querySelector(".info-funcionario")
 
+
 function carregar(){
-    carrinho.forEach(item => {
+	
+    funcionario.forEach(item => {
+	
     let novoFuncionario = infoFuncionario.cloneNode(true)
-    novoFuncionario = infoFuncionario.cloneNode(true)
+    let btn = novoFuncionario.querySelector("#botao-lixo")
     novoFuncionario.classList.remove("modelo")
 
     
-        novoItem.querySelector("#img-funcionario").src = item.img
-        novoItem.querySelector("#nome-funcionario").innerHTML = item.funcionario
-        novoItem.querySelector("#nivel").value = item.cargo.nível
-        novoItem.querySelector("#cargo").innerHTML = item.cargo.nome
+        novoFuncionario.querySelector("#img-funcionario").src = item.img
+        novoFuncionario.querySelector("#nome-funcionario").innerHTML = item.funcionario
+        novoFuncionario.querySelector("#nivel").innerHTML = item.cargo.nível
+        novoFuncionario.querySelector("#cargo").innerHTML = item.cargo.nome
+		if(item.cargo.nível !=3){
+			console.log(btn)
+			btn.classList.remove("botao")
+		}
 
-        document.querySelector(".carrinho").appendChild(novoItem)
-    })
+        document.querySelector(".funcionarios").appendChild(novoFuncionario)
+		
+	})
 }
 function removerItem(e){
-    e.parentNode.remove()
+	e.parentNode.remove()
 }
