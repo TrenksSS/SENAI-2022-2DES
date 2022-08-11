@@ -1,16 +1,32 @@
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="assets/shopping-cart-free-icon-font.png">
     <link rel="stylesheet" href="lojaCSS.css">
-    <title>Lojinha</title>
+    <link rel="icon" type="imagem/png" href="assets/shopping-cart-free-icon-font.png" />
+
+    <title>Funcionarios</title>
 </head>
-<body>
-    <div>
-        <h1>Bem vindo a Home</h1>
+
+<body onLoad="carregar()">
+    <div class="funcionarios">
+        <div class="info-funcionario modelo">
+            <img id="img-funcionario" src="assets/do-utilizador.png" alt="">
+            <p id="nome-funcionario">Nome Funcionario</p>
+            <p id="cargo">Cargo</p>
+            <p id="nivel">nivel</p>
+
+
+            <img onclick="removerItem(this)" class="botao" id="botao-lixo" src="assets/lixo.png" alt="" srcset="">
+
+        </div>
     </div>
+
 </body>
+<script src="lojinha.js"></script>
+
 </html>
