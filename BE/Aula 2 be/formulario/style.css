@@ -3,8 +3,6 @@
     margin: 0%;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
-    background-color: rgb(0, 136, 199);
-    
 }
 .itens{
     display: flex;
@@ -15,10 +13,9 @@
     background-color: rgb(86, 222, 246);
 }
 #cont p{
-    background-color: rgb(86, 222, 246);
+    
 }
 #cont input{
-    background-color:rgb(86, 222, 246);
 }
 #cont button{
     background-color: rgb(0, 6, 92);
