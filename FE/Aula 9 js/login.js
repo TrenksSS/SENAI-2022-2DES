@@ -15,9 +15,15 @@ fetch("https://jsonplaceholder.typicode.com/users")
         let valSenha = cliente.username
         
         if (userr == valUser && senha == valSenha) {
-            alert("Entrou!")
-            location.href = "pagina.html"
             achou = true
+
+
+            let infoUser = {
+                'id':cliente.id,
+                'name':cliente.name
+            }
+            window.localStorage.setItem("infoUser",JSON.stringify(infoUser))
+            location.href = "pagina.html"
         }
     })
     if(achou == false) {
