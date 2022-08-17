@@ -8,34 +8,35 @@
     <title>Cadastro</title>
 </head>
 <body>
-    <div id="cadastro">
+    <form id="cadastro">
         <div id="user-info">
 
             <div><h1>CADASTRO</h1></div>
             <div><p>Primeiro nome:</p></div>
-            <div><input type="text"></div>
+            <div><input id="p-nome" type="text" required="true"></div>
             <div><p>Sobrenome:</p></div>
-            <div><input type="text"></div>
+            <div><input id="sobrenome" type="text" required="true"></div>
             <div><p>Emal:</p></div>
-            <div><input type="text"></div>
+            <div><input id="email" type="text" required="true"></div>
             <div><p>Nova senha:</p></div>
-            <div><input type="text"></div>
+            <div><input id="senha" type="text" required="true"></div>
             <div><p>Comfirmar senha:</p></div>
-            <div><input type="text"></div>
+            <div><input id="c-senha" type="text" required="true"></div>
             <div><p>Telefone:</p></div>
-            <div><input type="text"></div>
+            <div><input id="telefone" type="text" required="true"></div>
             <div><p>CEP:</p></div>
-            <div><input type="text"></div>
+            <div><input id="cep" type="text" required="true"></div>
             <div>
                 <p>Aceite os <a href="Termos.html">termos de uso</a> para continuar</p>
             </div>
-            <div><input type="checkbox"></div>
-            <div><button>CADASTRAR</button></div>
+            <div><input id="termo" type="checkbox" required="true"></div>
+            <div><button onclick="cadastrar()">CADASTRAR</button></div>
 
 
         </div>
 
-    </div>
+    </form>
     
 </body>
+<script src="cadastro.js"></script>
 </html>
