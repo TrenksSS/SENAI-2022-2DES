@@ -1,0 +1,1 @@
+{"ast":null,"code":"export default function App() {\n  return;\n}","map":{"version":3,"names":["App"],"sources":["C:/Users/Deselvolvimento/Desktop/SENAI-2022-2DES/MOBILE/aula01/App.js"],"sourcesContent":["export default function App() {\n  return\n}"],"mappings":"AAAA,eAAe,SAASA,GAAT,GAAe;EAC5B;AACD"},"metadata":{},"sourceType":"module"}
