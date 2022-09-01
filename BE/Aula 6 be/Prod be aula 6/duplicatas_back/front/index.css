@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: -webkit-gradient(linear, left top, left bottom, from(#6ad2f7), to(#305e64));
+    width: 100vw;
+    height: 100vh;
+}
+.cont{
+    display: flex;
+    justify-content: center;
+    
+}
+.user{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    border: 2px solid black;
+    width: 200px;
+    height: 60px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(73, 75, 75);
+    color: white;
+}
+#fone{
+    width: 30px;
+}
