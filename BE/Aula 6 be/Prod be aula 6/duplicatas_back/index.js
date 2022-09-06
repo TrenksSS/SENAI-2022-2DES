@@ -4,6 +4,7 @@ const mysql = require("mysql");
 const cli = require("./src/clientes.js");
 
 const app = express();
+app.use(cors());
 
 const con = mysql.createConnection({
     user: 'root',
@@ -12,7 +13,7 @@ const con = mysql.createConnection({
 });
 
 app.get('/duplicatas/clientes',(req,res)=>{
-    let string = "select * from vw_clientes";
+    let string = "select * from vw_clientes order by cod_cli";
     con.query(string,(err,result)=>{
         if(err == null){
             res.json(cli.clientes(result));

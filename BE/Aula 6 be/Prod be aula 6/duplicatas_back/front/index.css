@@ -7,25 +7,59 @@ body{
     background: -webkit-gradient(linear, left top, left bottom, from(#6ad2f7), to(#305e64));
     width: 100vw;
     height: 100vh;
+    background-repeat: no-repeat;
 }
 .cont{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     
 }
 .user{
     display: flex;
-    flex-direction: column;
+    flex-direction:row;
     margin: 20px;
     border: 2px solid black;
-    width: 200px;
-    height: 60px;
+    width: 80%;
     border-radius: 10px;
     align-items: center;
     justify-content: center;
     background-color: rgb(73, 75, 75);
     color: white;
+    flex-wrap: wrap;
 }
 #fone{
     width: 30px;
+}
+.item{
+    margin: 20px;
+}
+#modais {
+    background-color: rgba(0, 0,0, 0.5);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+#modalTels {
+    background-color: #ccc;
+    position: relative;
+    top: 10vw;
+    box-shadow: 2px 2px 4px black;
+}
+
+.fechar{
+    cursor: pointer;
+    width: 25px;
+    font-weight: bold;
+    color: #ccc;
+    background-color: #060;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
 }

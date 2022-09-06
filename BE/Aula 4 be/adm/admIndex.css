@@ -1,0 +1,21 @@
+@import url('../style/global.css');
+table{
+    width: 100%;
+}
+table > tbody > tr > td {
+    text-align: center;
+}
+table tr{
+    margin: 20px;
+}
+.icone{
+    width: 20px;
+}
+button{
+    background-color: none;
+    border: none;
+}
+
+button:hover{
+    cursor: pointer;
+}

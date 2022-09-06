@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,36 +10,44 @@
 
     <title>Listinha</title>
 </head>
+
 <body>
     <div class="cont">
         <div class="user model">
-        <p>Código do cliente</p>
-        <p id="cod_cli">#000</p>
+
+            <p id="cod_cli">Código do cliente</p>
+
+
+            <p class="item" id="nome">Nome</p>
+
+
+            <p class="item" id="end">Endereço</p>
+
+
+            <p class="item" id="bairro">Bairro</p>
+
+
+            <p class="item" id="cidade">Cidade</p>
+
+
+            <p class="item" id="uf">UF</p>
+            <img src="docs/call-outgoing-free-icon-font.png" alt="icone telefone" id="fone" class="item" onclick="mostraTels()">
         </div>
-        <div class="user model">
-            <p>Nome</p>
-            <p id="nome">AAA</p>
+        <div id="modais">
+            <div id="modalTels" style="display:none;">
+
+                            <p>Telefones</p>
+                            <p>Tipo</p>
+                            <p>Número</p>
+                    <p id="telefones"></p>
+                    <button class="fechar" onclick="modais.setAttribute('style','display:none;')">X</button>
+            </div>
         </div>
-        <div class="user model">
-            <p>Endereço</p>
-            <p id="end">BBB</p>
-        </div>
-        <div class="user model">
-            <p>Bairro</p>
-            <p id="bairro">CCC</p>
-        </div>
-        <div class="user model">
-            <p>Cidade</p>
-            <p id="cidade">DDD</p>
-        </div>
-        <div class="user model">
-            <p>UF</p>
-            <p id="uf">EEE</p>
-        </div>
-        <div class="user model"><img src="docs/call-outgoing-free-icon-font.png" alt="icone telefone" id="fone"></div>
-        
+
+
     </div>
-    
+
 </body>
 <script src="front.js"></script>
+
 </html>
