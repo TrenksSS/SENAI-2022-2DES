@@ -1,37 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
-    <title>Document</title>
+    <title>Livro Caixa</title>
 </head>
-<body>
+
+<body onload="loadLanc()">
+    <div class="cab">
+        <center><h1>Livro Caixa</h1></center>
+    </div>
+    
     <div id="cont">
         <div id="deb">
-                <main>
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>N-lancamento</th>
-                                <th>Data</th>
-                                <th>Descrição</th>
-                                <th>valor</th>
-                                <th>Tipo</th>
-                            </tr>
-                        </thead>
-                        <tbody id="lista-lancamento">
-                            <tr class="linhamodelo model">
-                                <td>1234</td>
-                                <td>Outro</td>
-                                <td>R$100</td>
-                                <td>pão</td>
-                                <td>tipo</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </main>
+            <main>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>N-lancamento</th>
+                            <th>Data</th>
+                            <th>Descrição</th>
+                            <th>valor</th>
+                            <th>Tipo</th>
+                        </tr>
+                    </thead>
+                    <tbody id="allLac2"></tbody>
+                </table>
+            </main>
         </div>
         <div id="cred">
             <main>
@@ -45,11 +43,13 @@
                             <th>Tipo</th>
                         </tr>
                     </thead>
+                    <tbody id="allLac"></tbody>
                 </table>
             </main>
+        </div>
     </div>
-    </div>
-    
+
 </body>
 <script src="index.js"></script>
+
 </html>
