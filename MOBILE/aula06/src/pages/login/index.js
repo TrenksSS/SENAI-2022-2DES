@@ -1,11 +1,14 @@
-import { View, Text, TouchableOpacity, TextInput, Image, useState } from "react-native";
+import{useState} from "react"
+import { View, Text, TouchableOpacity, TextInput, Image} from "react-native";
+
 import Button from '../../components/button';
-const [login, setLogin] = useState ('') 
-const [senha,setSenha] = useState ('')
+
 
 import styles from "./style";
 
 export default function Login({ navigation }) {
+    const [login, setLogin] = useState(""); 
+    const [senha, setSenha] = useState("");
     const users = [
         {
             "id": 1,
@@ -19,22 +22,25 @@ export default function Login({ navigation }) {
         },
     ]
     const image = require('../../../assets/logo.png')
+
     const funcao = () => {
-        let use = false
-        users.forEach(user =>{
-            if{user.email == login}
-        }
-        )
+        users.forEach(item => {
+            if(login == item.email && senha == item.senha){
+                return(navigation.navigate("Home",{"userId":item.id}))
+            }
+        });
+        
     }
+
     return (
         <View style={styles.cont}>
             <Image
                 style={styles.logo}
                 source={{ uri: image}}
             />
-            <TextInput style={styles.inp} placeholder="Login" onChangeText={(val) => { setNome(val) }} />
-            <TextInput style={styles.inp} placeholder="Senha" onChangeText={(val) => { setNome(val) }} />
-            <Button value="Login" onPress={funcao} />
+            <TextInput style={styles.inp} placeholder="Login" onChangeText={val => { setLogin(val) }} value={login}/>
+            <TextInput style={styles.inp} placeholder="Senha" onChangeText={val => { setSenha(val) }} value={senha}/>
+            <Button value="Login" onPress={()=>{funcao()}} />
         </View>
     )
 }
