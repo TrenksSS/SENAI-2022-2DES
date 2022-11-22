@@ -15,9 +15,15 @@ export default function App() {
 
   const salvar = async () => {
     try{
-      const jsonzinho = JSON.stringify('data')
+      const jsonzinho = JSON.stringify({
+        nome:nome,
+        cargo:carco,
+        salario:salario
+      })
       await AsyncStorage.setItem('data', jsonzinho)
       setNome("")
+      setCargo("")
+      setSalario("")
     }catch(err) {
       console.log(err)
     }
@@ -26,7 +32,15 @@ export default function App() {
   const ler = async () => {
     try{
       let data = await AsyncStorage.getItem("data")
-      console.log(data)
+     var alguma = data != null ? JSON.parse(data) : null;
+      setLida(
+        <View>
+          <Text>Nome: {alguma.nome}</Text>
+          <Text>Cargo: {alguma.cargo}</Text>
+          <Text>Salario: {alguma.salario}</Text>
+        </View>
+      )
+      console.log(lida)
     }catch(err){
       console.log(err)
     }
@@ -35,11 +49,11 @@ export default function App() {
   return (
     <View style={styles.container}>
       <Text>Nome</Text>
-      <TextInput  onChangeText={(val)=> { setNome(val)}}/>
+      <TextInput value={nome} onChangeText={(val)=> { setNome(val)}}/>
       <Text>Cargo</Text>
-      <TextInput  onChangeText={(val)=> { setCargo(val)}}/>
+      <TextInput value={carco} onChangeText={(val)=> { setCargo(val)}}/>
       <Text>Salario</Text>
-      <TextInput  onChangeText={(val)=> { setSalario(val)}}/>
+      <TextInput value={salario} onChangeText={(val)=> { setSalario(val)}}/>
       <Button title='Salvar' onPress={() => {salvar()}} />
       <Button title='ler' onPress={() => {ler()}} />
       <Text>{lida}</Text>
