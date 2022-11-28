@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+:root {
+    --cor-1:rgb(128, 2, 2);
+    --cor-2:rgb(240, 163, 69);
+    --cor-3:rgba(239, 96, 74, 0.503);
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Permanent Marker', cursive;
+    width: 100vw;
+    height: 100vh;
+}
+header{
+    display: flex;
+    width: 100vw;
+    height: 10vh;
+    background-color: var(--cor-1);
+    justify-content: space-between;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+#icon{
+    width: 60px;
+    padding: 20px;
+}
+.info{
+    padding: 20px;
+    align-items: center;
+    display: flex;
+    color: white;
+    font-size: 25px;
+}
+.ms{
+    padding: 20px;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+
+.iten{
+    width: 60vw;
+    height: 20vh;
+    display: flex;
+    background-color: var(--cor-1);
+    margin: 20px;
+    color: white;
+    border-radius: 5PX;
+}
+.iten img{
+    padding: 10px;
+}
+.des{
+    display: flex;
+    flex-direction: column;
+}
+.model {
+    display: none;
+}
+#ir{
+    cursor: pointer;
+}

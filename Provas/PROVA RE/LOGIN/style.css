@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+:root {
+    --cor-1:rgb(128, 2, 2);
+    --cor-2:rgb(240, 163, 69);
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Permanent Marker', cursive;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cor-1);
+}
+main{
+    display: flex;
+    align-items: center;
+}
+.card-login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 20vw;
+    height: 40vh;
+    background-color: var(--cor-2);
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    transition: 0.6s;
+}
+.card-login:hover{
+    transition: 0.6s;
+    box-shadow: rgba(250, 54, 54, 0.49) 0px 20px 40px, rgba(250, 43, 43, 0.626) 0px 12px 12px;
+}
+.texto-login{
+    width: 40vw;
+    height: 40vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding-right: 10%;
+    align-items: center;
+}
+.texto-login img{
+ width: 200px;
+}
+#in{
+    border: 0px;
+    margin-top: 30px;
+    width: 173px;
+    height: 35px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+.inp{
+    margin-bottom: 30px;       
+    width: 173px;
+    height: 30px;
+    border: 0px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
